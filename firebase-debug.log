@@ -1,0 +1,38 @@
+[debug] [2019-07-13T17:37:12.954Z] ----------------------------------------------------------------------
+[debug] [2019-07-13T17:37:12.957Z] Command:       /Users/berat/.nvm/versions/node/v10.16.0/bin/node /Users/berat/.nvm/versions/node/v10.16.0/bin/firebase deploy
+[debug] [2019-07-13T17:37:12.957Z] CLI Version:   7.1.0
+[debug] [2019-07-13T17:37:12.958Z] Platform:      darwin
+[debug] [2019-07-13T17:37:12.958Z] Node Version:  v10.16.0
+[debug] [2019-07-13T17:37:12.984Z] Time:          Sat Jul 13 2019 20:37:12 GMT+0300 (GMT+03:00)
+[debug] [2019-07-13T17:37:12.984Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-13T17:37:13.019Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-13T17:37:13.020Z] > authorizing via signed-in user
+[debug] [2019-07-13T17:37:13.020Z] [iam] checking project personal-website-berat for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-07-13T17:37:13.022Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-07-13T17:37:13.023Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-07-13T17:37:13.488Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-13T17:37:13.521Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-berat:testIamPermissions  
+
+[debug] [2019-07-13T17:37:14.786Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-13T17:37:14.792Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/personal-website-berat  
+ 
+[debug] [2019-07-13T17:37:15.421Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'personal-website-berat'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-07-13T17:37:15.431Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/personal-website-berat/versions  
+
+[debug] [2019-07-13T17:37:17.467Z] <<< HTTP RESPONSE 200
+[info] i  hosting[personal-website-berat]: beginning deploy...
+[info] i  hosting[personal-website-berat]: found 158 files in public
+[debug] [2019-07-13T17:37:17.547Z] [hosting] hash cache [cHVibGlj] load error: lines is not defined
+[debug] [2019-07-13T17:37:19.567Z] [hosting] hash cache [cHVibGlj] stored for 158 files
+[debug] [2019-07-13T17:37:19.577Z] [hosting][hash queue][FINAL]
+[debug] [2019-07-13T17:37:19.577Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/personal-website-berat/versions/5afe4f412929f080:populateFiles  
+ <request body omitted>
+[debug] [2019-07-13T17:37:23.098Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-13T17:37:23.113Z] [hosting][populate queue][FINAL]
+[debug] [2019-07-13T17:37:23.113Z] [hosting] uploads queued: 20
