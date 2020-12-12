@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "personal-website-berat",
     "public": "public",
     "ignore": [
       "firebase.json",
